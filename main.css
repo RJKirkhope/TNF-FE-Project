@@ -3,6 +3,8 @@ body{
   padding:0;
   margin:0;
   background-color: black;
+  font-family:Helvetica Neue LT Std; 
+  color:white;
 }
 
 @font-face {
@@ -19,14 +21,13 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 #bannerTextContainer{
   width: 400px;
   margin-top: 200px;
   margin-right: 200px;
-  font-family:Helvetica Neue LT Std; 
-  color:white;
 }
 
 #bannerTitle{
@@ -40,27 +41,25 @@ body{
   line-height: 1.5;
 }
 
-.productSection{
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+#productSection{
+  height: auto;
 }
 
-.productImageContainer{
-  width: 40%;
+.product{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .productImage{
-  margin-top: 80px;
+  width: 40%;
 }
 
 .productTextContainer{
-  font-family:Helvetica Neue LT Std; 
-  color:white;
   width: 40%;
-  margin-left: 80px;
+  justify-content: center;
+  align-items: center;
 }
 
 .productAttention{
@@ -93,4 +92,102 @@ button{
 
 button:hover {
   background-color: #bcb9b9;
+}
+
+@media only screen and (max-width: 1024px) {
+  #bannerSection{
+    background: url("image-assets/icons-remastered-online-lp-m.jpg") no-repeat center;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #bannerTextContainer{
+    font-family:Helvetica Neue LT Std; 
+    color:white;
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+    margin-right: 0px;
+    justify-content: center;
+  }
+  
+  #bannerTitle{
+    width: 100%;
+    font-size: 30pt;
+  }
+  
+  #bannerSubText{
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  #productSection{
+    height: 100%;
+  }
+
+  .product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productImageContainer{
+    width: 50%;
+  }
+  
+  .productImage{
+    margin-top: 80px;
+    width: 100%;
+  }
+  
+  .productTextContainer{
+    font-family:Helvetica Neue LT Std; 
+    color:white;
+    width: 50%;
+    margin-left: 80px;
+  }
+  
+  .productAttention{
+    font-size: 20pt;
+  }
+  
+  .productTitle{
+    width: 400px;
+    font-size: 20pt;
+  }
+  
+  .productSubText{
+    width: 300px;
+    font-size: 12pt;
+    line-height: 1.8;
+  }
+  
+  button{
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #bannerSection{
+    background: url("image-assets/icons-remastered-online-lp-m.jpg") no-repeat center;
+    background-size: contain;
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

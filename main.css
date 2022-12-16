@@ -1,10 +1,12 @@
 
-body{
+body, html{
   padding:0;
   margin:0;
+  overflow-x: hidden;
   background-color: black;
   font-family:Helvetica Neue LT Std; 
   color:white;
+  font-size: 100%;
 }
 
 @font-face {
@@ -25,69 +27,90 @@ body{
 }
 
 #bannerTextContainer{
-  width: 400px;
-  margin-top: 200px;
-  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: center;
+  align-content: center;
 }
 
-#bannerTitle{
-  width: 400px;
-  font-size: 20pt;
+#bannerHeadline{
+  font-size: 2em;
 }
 
-#bannerSubText{
-  width: 240px;
-  font-size: 12pt;
+#bannerCopy{
+  font-size: 1.1em;
   line-height: 1.5;
+  margin-top: -6%;
 }
 
 #productSection{
   height: auto;
 }
 
-.product{
+.productLeft{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.productRight{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .productImage{
-  width: 40%;
+  width: 45%;
 }
 
 .productTextContainer{
   width: 40%;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: space-around;
+  margin: 0%;
+}
+
+.productText{
+  width:90%
 }
 
 .productAttention{
-  font-size: 20pt;
+  font-size: 1.8em;
+  margin-bottom:-5%;
 }
 
-.productTitle{
-  width: 400px;
-  font-size: 20pt;
+.productHeadline{
+  font-size: 3.2em;
+  line-height: 1.5em;
+  margin: 0%;
 }
 
-.productSubText{
-  width: 300px;
-  font-size: 12pt;
-  line-height: 1.8;
+.productCopy{
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 5%;
+}
+
+.buttonContainer{
+  width:100%
 }
 
 button{
   background-color: #ffffff;
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 5% 9%;
   text-align: center;
   text-decoration: none;
+  font-size: 1em;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 6px 4px;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 30px;
 }
 
 button:hover {
@@ -96,98 +119,100 @@ button:hover {
 
 @media only screen and (max-width: 1024px) {
   #bannerSection{
-    background: url("image-assets/icons-remastered-online-lp-m.jpg") no-repeat center;
+    background: url("image-assets/icons-remastered-online-lp-m.jpg") no-repeat;
+    background-size: cover;
     background-size: 100%;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   
   #bannerTextContainer{
-    font-family:Helvetica Neue LT Std; 
-    color:white;
-    width: 50%;
-    height: 100%;
-    margin-top: 100px;
-    margin-right: 0px;
-    justify-content: center;
+    width: 80%;
+    justify-content: space-evenly;
   }
   
-  #bannerTitle{
-    width: 100%;
-    font-size: 30pt;
+  #bannerHeadline{
+    margin-top: 50%;
+    font-size: 3em;
   }
   
-  #bannerSubText{
-    font-size: 12pt;
-    line-height: 1.5;
+  #bannerCopy{
+    margin-top: 60%;
+    font-size: 2em;
   }
   
   #productSection{
     height: 100%;
+    max-width: 100%;
   }
 
-  .product{
+  .productRight{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .productLeft{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
-  .productImageContainer{
-    width: 50%;
-  }
-  
   .productImage{
-    margin-top: 80px;
-    width: 100%;
+    width:100%
   }
   
   .productTextContainer{
-    font-family:Helvetica Neue LT Std; 
-    color:white;
-    width: 50%;
-    margin-left: 80px;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    margin-left: 10%;
+    flex-direction: column;
+    margin-top: 5%;
   }
   
   .productAttention{
-    font-size: 20pt;
+    font-size: 2.4em;
+    margin: 0;
   }
   
-  .productTitle{
-    width: 400px;
-    font-size: 20pt;
+  .productHeadline{
+    font-size: 3.5em;
   }
   
-  .productSubText{
-    width: 300px;
-    font-size: 12pt;
-    line-height: 1.8;
+  .productCopy{
+    font-size: 1.7em;
   }
-  
-  button{
-    background-color: #ffffff;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-}
 
-@media only screen and (max-width: 640px) {
-  #bannerSection{
-    background: url("image-assets/icons-remastered-online-lp-m.jpg") no-repeat center;
-    background-size: contain;
-    background-size: 100% 100%;
-    width: 100%;
+  .buttonContainer{
+    height: 30%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+
+  button{
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  min-width:600px;
+  padding: 26px 160px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 45px;
+  margin-bottom: 5%;
   }
 }

@@ -3,12 +3,12 @@ function init(){
   const developmentData = { 
   pageBannerImageDesktop : "image-assets/icons-remastered-online-lp-d.jpg",
   pageBannerImageMobile : "image-assets/icons-remastered-online-lp-m.jpg",
-  bannerTitle : 'Legends don\'t change. They adapt.',
-  bannerSubText : 'A revolutionary start to a new way forward. Meticulously remastered with innovative technologies, premium materials and incomperable craftsmanship, these enduring icons are crafted to face the future boldly. What\'s next is up to you.',
+  bannerHeadline : 'Legends <br> don\'t change. <br> They adapt.',
+  bannerCopy : 'A revolutionary start to a new way <br> forward. Meticulously remastered <br> with innovative technologies,<br> premium materials and incomperable <br> craftsmanship, these enduring icons <br> are crafted to face the future boldly.<br> What\'s next is up to you.',
   productObjects : [{
-  productTitle: 'Nuptse Jacket',
+  productHeadline: 'Nuptse Jacket',
   productAttention: 'Remastered',
-  productSubText: 'You\'ve seen this jacket. What you haven\'t seen is the innovative:new technology, elevated bonded baffle construction, premium materials. This is not Nuptse you know. It\'s the Nuptse like never before.',
+  productCopy: 'You\'ve seen this jacket. What you haven\'t <br> seen is the innovative:new technology, <br> elevated bonded baffle construction,<br> premium materials. This is not the <br> Nuptse you know. It\'s the Nuptse like <br> never before.',
   productButtons: ['Shop Mens', 'Shop Womens'],
   productURL: 'https://www.thenorthface.com/en-us/womens/collections/summit-series-c324773/summit-torre-egger-futurelight-boots-pNF0A52RE?color=KX9',
   productImageDesktop: 'image-assets/icons-remastered-online-lp-rmst-nuptse-d.jpg',
@@ -16,9 +16,9 @@ function init(){
   productImageAlt: 'Nuptse Jacket'
   },
   {
-  productTitle: 'Nuptse Jacket',
+  productHeadline: 'Nuptse Jacket',
   productAttention: 'Remastered',
-  productSubText: 'You\'ve seen this jacket. What you haven\'t seen is the innovative:new technology, elevated bonded baffle construction, premium materials. This is not Nuptse you know. It\'s the Nuptse like never before.',
+  productCopy: 'You\'ve seen this jacket. What you haven\'t <br> seen is the innovative:new technology, <br> elevated bonded baffle construction,<br> premium materials. This is not the <br> Nuptse you know. It\'s the Nuptse like <br> never before.',
   productButtons: ['Shop Mens', 'Shop Womens'],
   productURL: 'https://www.thenorthface.com/en-us/womens/collections/summit-series-c324773/summit-torre-egger-futurelight-boots-pNF0A52RE?color=KX9',
   productImageDesktop: 'image-assets/icons-remastered-online-lp-rmst-nuptse-d.jpg',
@@ -28,8 +28,8 @@ function init(){
 } 
 
 function buildBanner(developmentData) {
-  document.getElementById('bannerTitle').innerHTML=`<h1>${developmentData.bannerTitle}</h1>`;
-  document.getElementById('bannerSubText').innerHTML=`<p>${developmentData.bannerSubText}</p>`;
+  document.getElementById('bannerHeadline').innerHTML=`<h1>${developmentData.bannerHeadline}</h1>`;
+  document.getElementById('bannerCopy').innerHTML=`<p>${developmentData.bannerCopy}</p>`;
 }
 
 buildBanner(developmentData)
@@ -45,23 +45,23 @@ function mapProductObjects(developmentData) {
   })
 }
 
-
-
 function buildProductImageRight(productObject) {
 
   const productDetails = document.getElementById('productSection');
   productDetails.innerHTML += 
-    `<div class='product'>
+    `<div class='productRight'>
       <div class='productTextContainer'>
-        <h3 class='productAttention'>${productObject.productAttention}<h3>
-        <h1 class='productTitle'>${productObject.productTitle}</h1>
-        <p class="productSubText">${productObject.productSubText}</p>
+        <div class='productText'>
+          <p class='productAttention'>${productObject.productAttention}<p>
+          <h2 class='productHeadline'>${productObject.productHeadline}</h2>
+          <p class='productCopy'>${productObject.productCopy}</p>
         <div class="buttonContainer">
-        <a href="${productObject.productURL}"><button>Shop Men's</button></a>
-        <a href="${productObject.productURL}"><button>Shop Women's</button></a>
+          <a href="${productObject.productURL}"><button >Shop Women's</button></a>
+          <a href="${productObject.productURL}"><button >Shop Men's</button></a>
+        </div>
         </div>
       </div>
-      <img class="productImage" src="image-assets/icons-remastered-online-lp-rmst-nuptse-d.jpg" alt="nuptse jacket" width="100%">
+      <img class="productImage" src="image-assets/icons-remastered-online-lp-rmst-nuptse-m.jpg" alt="nuptse jacket" width="100%">
     </div>`  
 }
 
@@ -69,15 +69,17 @@ function buildProductImageLeft(productObject) {
 
   const productDetails = document.getElementById('productSection');
   productDetails.innerHTML += 
-    `<div class='product'>
-      <img class="productImage" src="image-assets/icons-remastered-online-lp-rmst-nuptse-d.jpg" alt="nuptse jacket" width="100%">
+    `<div class='productLeft'>
+      <img class="productImage" src="image-assets/icons-remastered-online-lp-rmst-nuptse-m.jpg" alt="nuptse jacket" width="100%">
       <div class='productTextContainer'>
-        <h3 class='productAttention'>${productObject.productAttention}<h3>
-        <h1 class='productTitle'>${productObject.productTitle}</h1>
-        <p class="productSubText">${productObject.productSubText}</p>
+        <div class= 'productText'>
+          <p class='productAttention'>${productObject.productAttention}<p>
+          <h2 class='productHeadline'>${productObject.productHeadline}</h2>
+          <p class="productCopy">${productObject.productCopy}</p>
         <div class="buttonContainer">
-          <button onclick="window.open(${productObject.productURL}, '_blank');">Shop Women's</button>
-          <button onclick="window.open(${productObject.productURL}, '_blank');">Shop Men's</button>
+          <a href="${productObject.productURL}"><button>Shop Women's</button></a>
+          <a href="${productObject.productURL}"><button>Shop Men's</button></a>
+        </div>
         </div>
       </div>
     </div>`  

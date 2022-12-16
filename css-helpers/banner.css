@@ -2,7 +2,7 @@
   background: url("/image-assets/icons-remastered-online-lp-d.jpg") no-repeat center;
   background-size: contain;
   background-size: 100% 100%;
-  width: 100%;
+  width: 100vw;
   height: 852px;
   display: flex;
   flex-direction: row;
@@ -19,14 +19,16 @@
 }
 
 #bannerHeadline{
-  font-size: 2em;
+  margin-top: 3%;
+  font-size: 2.35vw;
+  line-height: 1.1;
 }
 
 #bannerCopy{
   font-family: Helvetica Neue LT;
-  font-size: 1.2em;
+  font-size: 1.3vw;
   line-height: 1.5;
-  margin-top: -6%;
+  margin-top: -8%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -51,64 +53,10 @@
   #bannerHeadline{
     margin-top: 50%;
     margin-bottom: 50%;
-    font-size: 3.8em;
+    font-size: 6vw;
   }
   
   #bannerCopy{
-    font-size: 2em;
-  }
-}
-
-@media only screen and (max-width: 940px) {
-  #bannerHeadline{
-    font-size: 3.1em;
-    margin-bottom: 55%;
-  }
-  
-  #bannerCopy{
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 765px) {
-  #bannerHeadline{
-    font-size: 2.5em;
-  }
-}
-
-@media only screen and (max-width: 620px) {
-  #bannerHeadline{
-    font-size: 2em;
-  }
-  
-  #bannerCopy{
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 495px) {
-  #bannerHeadline{
-    font-size: 1.5em;
-    margin-bottom: 60%;
-  }
-  
-  #bannerCopy{
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  #bannerHeadline{
-    font-size: 1.2em;
-  }
-  
-  #bannerCopy{
-    font-size: .8em;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  #bannerHeadline{
-    font-size: 1em;
+    font-size: 4vw;
   }
 }

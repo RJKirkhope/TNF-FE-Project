@@ -18,16 +18,18 @@ function init(){
   productImageMobile: 'image-assets/icons-remastered-online-lp-rmst-nuptse-m.jpg',
   productImageAlt: 'Nuptse Jacket'
   },
-  {
-  productHeadline: 'Nuptse Jacket',
-  productAttention: 'Remastered',
-  productCopy: 'You\'ve seen this jacket. What you haven\'t <br> seen is the innovation: new technology, <br> elevated bonded baffle construction,<br> premium materials. This is not the <br> Nuptse you know. It\'s the Nuptse like <br> never before.',
-  productURLMens: 'https://www.thenorthface.com/en-us/womens/collections/summit-series-c324773/summit-torre-egger-futurelight-boots-pNF0A52RE?color=KX9',
-  productURLWomens: 'https://www.thenorthface.com/en-us/womens/collections/summit-series-c324773/summit-torre-egger-futurelight-boots-pNF0A52RE?color=KX9',
-  productImageDesktop: 'image-assets/icons-remastered-online-lp-rmst-nuptse-d.jpg',
-  productImageMobile: 'image-assets/icons-remastered-online-lp-rmst-nuptse-m.jpg',
-  productImageAlt: 'Nuptse Jacket'
-  }]
+              //Uncomment this block to see scaleable functionality for multiple products.
+  // {
+  // productHeadline: 'Nuptse Jacket',
+  // productAttention: 'Remastered',
+  // productCopy: 'You\'ve seen this jacket. What you haven\'t <br> seen is the innovation: new technology, <br> elevated bonded baffle construction,<br> premium materials. This is not the <br> Nuptse you know. It\'s the Nuptse like <br> never before.',
+  // productURLMens: 'https://www.thenorthface.com/en-us/womens/collections/summit-series-c324773/summit-torre-egger-futurelight-boots-pNF0A52RE?color=KX9',
+  // productURLWomens: 'https://www.thenorthface.com/en-us/womens/collections/summit-series-c324773/summit-torre-egger-futurelight-boots-pNF0A52RE?color=KX9',
+  // productImageDesktop: 'image-assets/icons-remastered-online-lp-rmst-nuptse-d.jpg',
+  // productImageMobile: 'image-assets/icons-remastered-online-lp-rmst-nuptse-m.jpg',
+  // productImageAlt: 'Nuptse Jacket'
+  // }
+]
 } 
 
 /**

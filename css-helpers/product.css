@@ -38,20 +38,21 @@
 }
 
 .productAttention{
-  font-size: 1.8em;
+  font-size: 2.1vw;
   margin-bottom:-5%;
 }
 
 .productHeadline{
-  font-size: 3.6em;
-  line-height: 1.5em;
+  font-size: 4.2vw;
+  line-height: 1.5;
   margin: 0%;
 }
 
 .productCopy{
   font-family: Helvetica Neue LT;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 1.3vw;
+  line-height: 1.5;
+  margin-top: -.5%;
   margin-bottom: 5%;
 }
 
@@ -99,16 +100,16 @@
   }
   
   .productAttention{
-    font-size: 2.4em;
+    font-size: 6vw;
     margin: 0;
   }
   
   .productHeadline{
-    font-size: 3.5em;
+    font-size: 9.5vw;
   }
   
   .productCopy{
-    font-size: 1.7em;
+    font-size: 4.4vw;
   }
 
   .buttonContainer{
@@ -118,41 +119,5 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 10%;
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .productAttention{
-    font-size: 2em;
-    margin: 0;
-  }
-  
-  .productHeadline{
-    font-size: 3em;
-  }
-  
-  .productCopy{
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 396px) {
-  
-  .productCopy{
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 345px) {
-  .productAttention{
-    font-size: 1em;
-  }
-  
-  .productHeadline{
-    font-size: 2em;
-  }
-  
-  .productCopy{
-    font-size: .8em;
   }
 }

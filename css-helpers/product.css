@@ -43,13 +43,14 @@
 }
 
 .productHeadline{
-  font-size: 3.2em;
+  font-size: 3.6em;
   line-height: 1.5em;
   margin: 0%;
 }
 
 .productCopy{
-  font-size: 1em;
+  font-family: Helvetica Neue LT;
+  font-size: 1.2em;
   line-height: 1.5em;
   margin-bottom: 5%;
 }
@@ -117,5 +118,41 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .productAttention{
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .productHeadline{
+    font-size: 3em;
+  }
+  
+  .productCopy{
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  
+  .productCopy{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .productAttention{
+    font-size: 1em;
+  }
+  
+  .productHeadline{
+    font-size: 2em;
+  }
+  
+  .productCopy{
+    font-size: .8em;
   }
 }
